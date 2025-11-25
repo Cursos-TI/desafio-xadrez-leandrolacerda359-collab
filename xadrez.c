@@ -68,18 +68,12 @@ int main() {
     printf("Movimento do CAVALO: ");
     for(i=0;i<=1;i++) {
         for(j=0;j<=2;j++) {
-            printf("v");
+            printf("^");
             j++;
         }
-        if(j=2) printf("<-");
+        if(j=2) printf("->");
         i++;
-    } printf("\n"); i=0; j=0;
-    printf("Movimento do CAVALO(MULTI-VARIÁVEIS): ");
-    for(i=0,j=2;i<=1 && j>=0;i++,j--) {
-        printf("v");
-        if(j=0) printf("<-");
-        i++; j--;
-    } printf("\n\n");
+    } printf("\n");
 
     return 0;
 }
